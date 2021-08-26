@@ -1,0 +1,99 @@
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+/*--Current weather CSS--*/
+
+.vcontain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hcontain {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.item,
+.item1 {
+  width: 33.33%;
+  align-self: center;
+  justify-content: space-evenly;
+}
+
+#temp {
+  font-size: 30px;
+  text-align: center;
+}
+
+
+#local {
+  text-align: center;
+  margin-top: 5px;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+#box {
+  border-radius: 20px;
+}
+
+@media(max-width: 1100px){
+  #temp{
+  font-size: 28px;
+  }
+  .item3, #local{
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 900px){
+  #temp{
+  font-size: 15px;
+  }
+  .item3{
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 700px){
+  #temp{
+  font-size: 15px;
+  }
+}
+
+/*-- Card CSS--*/
+
+.contain {
+  display: flex;
+}
+#inside {
+  flex-direction: column;
+  width: 160px;
+  height: auto;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  background-color: lightgray;
+  box-shadow: 6px 9px 17px 0px rgba(0, 0, 0, 0.42);
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+#outside {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.carditem {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+#img {
+  width: 100%;
+  margin: 0;
+}

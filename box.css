@@ -1,0 +1,35 @@
+.vcontain {
+  display: flex;
+  flex-direction: column;
+}
+.hcontain {
+  display: flex;
+  flex-direction: row;
+}
+#forbox {
+  width: 400px;
+  height: 225px;
+  border-radius: 15px;
+  box-shadow: 6px 9px 17px 0px rgba(0, 0, 0, 0.42);
+}
+
+#info {
+  height: 70%;
+}
+
+#local {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.icon {
+  padding-left: 45px;
+}
+
+.temp_press {
+  margin-top: 40px;
+  margin-left: 120px;
+}

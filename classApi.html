@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chad's mimic api Weather APP</title>
+    <link rel="stylesheet" href="classApi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="header">Weather Info</h1>
+    <div class="zip-input">
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" name="" id="zipCode" />
+      <button onclick="getWeather()">Current</button>
+      <button onclick="getForcast()">Forcast</button>
+      <label for="units">Units:</label>
+      <select id="units" name="units">
+        <option value="imperial">F</option>
+        <option value="metric">C</option>
+      </select>
+    </div>
+    <div id="weather"></div>
+    <div class="contain" id="outside"></div>
+
+    <script src="classApi.js"></script>
+  </body>
+</html>
