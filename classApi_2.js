@@ -73,7 +73,7 @@ function getWeather() {
         <div class="temp_press">
           <div class="vcontain">
             <div class="temp">${weather.main.temp}°${tempUnt}</div>
-            <div class="press">Pressure: ${weather.main.pressure} mb</div>
+            <div class="press">${weather.main.pressure} mb</div>
             <div id="wind">${weather.wind.speed}${windUnt} ${degToCard(wind)}</div>
           </div>
         </div>
@@ -86,7 +86,6 @@ function getWeather() {
         document.getElementById('weather').innerHTML = `<h2>Invalid Zip code<h2>`
     }
 }
-
 function getForcast(){
   document.getElementById('weather').innerHTML = ``
   let zip = document.getElementById('zipCode').value

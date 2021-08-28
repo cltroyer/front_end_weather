@@ -75,38 +75,27 @@ function getWeather() {
         };
         document.getElementById("weather").classList.add("Weather");
         document.getElementById("weather").innerHTML = `
-            <div  class="vcontain">
-            <div class="item" id="local" style="height: 40px; background-color:dimgray;;">
-              <h2>${weather.name}, ${weather.sys.country}</h2>
+        <div class="vcontain" id="forbox" style="background-color: green">
+        <div class="hcontain" id="local">
+          <h1>${weather.name}, ${weather.sys.country}</h1>
+        </div>
+        <div class="hcontain" id="info">
+          <div class="icon">
+            <div class="vcontain" id="icon-dis">
+              <img id="current_img" src="${icon}" alt="" />
+              <p id="discript">${weather.weather[0].description}</p>
             </div>
-            <div class="item" style="background-color:dimgray;;">
-              <div class="hcontain">
-                <div class="item">
-                  <div class="vcontain">
-                    <div class="item1">
-                      <img src="${icon}" alt=""/>
-                    </div>
-                    <div class="item1" id="local">${
-                      weather.weather[0].description
-                    }</div>
-                  </div>
-                </div>
-                <div class="item" id="temp">${
-                  weather.main.temp
-                }°${tempUnt}</div>
-                <div class="item">
-                  <div class="vcontain">
-                    <div class="item3">Wind: ${
-                      weather.wind.speed
-                    }${windUnt} ${degToCard(wind)}</div>
-                    <div class="item3">Pressure: ${
-                      weather.main.pressure
-                    } mb</div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="temp_press">
+            <div class="vcontain">
+              <div class="temp">${weather.main.temp}°${tempUnt}</div>
+              <div class="press">${weather.main.pressure} mb</div>
+              <div id="wind">${weather.wind.speed}${windUnt} ${degToCard(wind)}</div>
             </div>
-          </div>`;
+          </div>
+        </div>
+      </div>
+      `;
       });
   } else {
     document.getElementById("weather").classList.add("Weather");
