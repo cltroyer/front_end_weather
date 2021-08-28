@@ -1,5 +1,8 @@
-body {
-  font-family: "Mukta", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,700&display=swap');
+
+*{
+	font-weight: bold;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 /*--Current weather CSS--*/
@@ -7,64 +10,59 @@ body {
 .vcontain {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .hcontain {
   display: flex;
   flex-direction: row;
-
-  align-items: center;
 }
-.item,
-.item1 {
-  width: 33.33%;
-  align-self: center;
-  justify-content: space-evenly;
+#forbox {
+  width: 375px;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 6px 9px 17px 0px rgba(0, 0, 0, 0.42);
 }
 
-#temp {
-  font-size: 30px;
-  text-align: center;
+#info {
+  height: 70%;
+  justify-content: center;
 }
 
+#discript{
+	padding-bottom: 15px;
+	text-align: center;
+	font-size: 20px;
+}
 
 #local {
-  text-align: center;
-  margin-top: 5px;
+  justify-content: center;
 }
 
-h2 {
-  margin-top: 0px;
+h1 {
+  font-size: 25px;
 }
 
-#box {
-  border-radius: 20px;
+.icon {
+  width: 187px;
 }
 
-@media(max-width: 1100px){
-  #temp{
+.temp_press {
+  margin-top: auto;
+  margin-left: auto;
   font-size: 28px;
-  }
-  .item3, #local{
-    font-size: 13px;
-  }
+  margin-bottom: 40px;
+  margin-right: 50px;
 }
 
-@media(max-width: 900px){
-  #temp{
-  font-size: 15px;
-  }
-  .item3{
-    font-size: 10px;
-  }
+#icon-dis {
+	margin-bottom: 20px;
+	align-content: center;
 }
 
-@media(max-width: 700px){
-  #temp{
-  font-size: 15px;
-  }
+#current_img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 5px;
 }
-
 /*-- Card CSS--*/
 
 .contain {

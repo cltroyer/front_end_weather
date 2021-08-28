@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,700&display=swap');
+
+*{
+	font-weight: bold;
+	font-family: 'Merriweather Sans', sans-serif;
+}
 .vcontain {
   display: flex;
   flex-direction: column;
@@ -7,14 +13,21 @@
   flex-direction: row;
 }
 #forbox {
-  width: 400px;
-  height: 225px;
+  width: 375px;
+  height: 250px;
   border-radius: 15px;
   box-shadow: 6px 9px 17px 0px rgba(0, 0, 0, 0.42);
 }
 
 #info {
   height: 70%;
+  justify-content: center;
+}
+
+#discript{
+	padding-bottom: 15px;
+	text-align: center;
+	font-size: 20px;
 }
 
 #local {
@@ -26,10 +39,24 @@ h1 {
 }
 
 .icon {
-  padding-left: 45px;
+  width: 187px;
 }
 
 .temp_press {
-  margin-top: 40px;
-  margin-left: 120px;
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+}
+
+#icon-dis {
+	margin-bottom: 20px;
+	align-content: center;
+}
+
+#current_img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 5px;
 }
