@@ -9,14 +9,18 @@
 </head>
 <body>
     <h1 id="header">Weather Info</h1>
-    <div class="zip-input">
-      <label for="zipCode">Zip Code:</label>
-      <input type="text" name="" id="zipCode" /><button id="current_btn" onclick="getWeather()">Current</button><button id="forcast_btn" onclick="getForcast()">Forcast</button>
+    <div class="input">
+		<div id="zip_inp">
+      <input type="number" placeholder="Zip Code" name="" id="zipCode" />
+  </div>
+      <div id="input">
+      <button id="current_btn" onclick="getWeather()">Current</button><button id="forcast_btn" onclick="getForcast()">Forcast</button>
       <label for="units">Units:</label>
       <select id="units" name="units">
         <option value="imperial">F</option>
         <option value="metric">C</option>
       </select>
+  </div>
     </div>
 </body>
 </html>
