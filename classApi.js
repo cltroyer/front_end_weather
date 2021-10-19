@@ -75,7 +75,7 @@ function getWeather() {
         };
         document.getElementById("weather").classList.add("Weather");
         document.getElementById("weather").innerHTML = `
-        <div class="vcontain" id="forbox" style="background-color: green">
+        <div class="vcontain" id="forbox">
         <div class="hcontain" id="local">
           <h1>${weather.name}, ${weather.sys.country}</h1>
         </div>
@@ -102,6 +102,8 @@ function getWeather() {
     document.getElementById("weather").innerHTML = `<h2>Invalid Zip code<h2>`;
   }
 }
+
+
 // Forcast
 function getForcast() {
   if (
